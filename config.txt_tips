@@ -1,0 +1,7 @@
+# see below for useful bits to put in the /boot/config.txt file
+
+# TM 01/07/2020 - enable shutdown on GPIO17 (pin 11)
+# N.B. shorting pin 5 (GPIO3) to ground causes the pi to power on
+dtoverlay=gpio-shutdown,gpio_pin=17,active_low=1,gpio_pull=up
+
+
